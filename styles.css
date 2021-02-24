@@ -141,7 +141,7 @@ figcaption      {color: #F79605;
                     color:#16014B;
                     font-family: "Love Ya Like A Sister";
                     padding-bottom: 5%;
-                    min-width: 500px;}
+                    min-width: 320px;}
 
 form            {margin-left: 10px;}
 fieldset        {padding: 2%;
@@ -191,9 +191,11 @@ input, select, button   {font-size: 1.1em;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 justify-content: space-around;
+                align-items: center;
                 width: 100%;}
 #Contact img    {border: 5px solid #4b7290;
-                max-width: 25%;}
+                max-width: 25%;
+                align-self: center;}
 #contactText    {width: 30%;
                 background-color: #16014B;
                 color: #F79605;
@@ -281,7 +283,8 @@ button              {background-color: #4b7290;}
                     text-align: left;
                     width: 96%;}
 #Contact            {flex-direction: column;}
-#Contact img        {max-width: 100%;}
+#Contact img        {max-width: 100%;
+                     max-height: 100%}
 #contactText        {width: 100%;}
 #contactText p       {margin: 0;}
 #niceSign           {display: none;}
