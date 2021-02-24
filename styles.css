@@ -171,7 +171,8 @@ input, select, button   {font-size: 1.1em;
 #teamImages      {display: flex;
                  flex-direction: row;
                  flex-wrap: nowrap;
-                 padding: 3%;}
+                 padding: 3%;
+                 align-items: center;}
             
 #teamImages figure 
                 {display: flex;
@@ -180,7 +181,8 @@ input, select, button   {font-size: 1.1em;
 
 #teamImages figcaption
                 {font-size: 1.5em;
-                text-align: center;}
+                text-align: center;
+                align-self: center;}
 
 
 #Contact        {background-color: #F79605;
@@ -260,8 +262,8 @@ header p        {font-size: 1em;
 #About          {margin: 1%;}
 .flexImages      {flex-direction:column;
                flex-wrap: wrap;}
-figcaption      {font-size: 2em;
-                grid-area: 3 / 2 / 4 / 4;}
+figcaption      {font-size: 1.5em;
+                grid-area: 1 / 3 / 2 / 4;}
  
 #campfire       {display: none;}
 form            {width: 100%;}
@@ -274,10 +276,10 @@ button              {background-color: #4b7290;}
 #TeamSection        {margin: 2%;}
 #Team               {font-size: 1.5em;}
 #teamImages         {flex-direction: column;
-                    width: 70%;
+                    width: 100%;
                     padding: 0;
                     height: auto;}
-#teamImages figure  {flex-direction: row;
+#teamImages figure  {flex-direction: column;
                     width: 96%;}
 #teamImages figcaption {font-size: 1em;
                     text-align: left;
