@@ -1,0 +1,290 @@
+*               {margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 16px;}
+
+img             {max-width: 100%;}
+
+main            {width: 100%;
+                height: 100%;
+                margin: 0 auto;}
+
+body            {background-color:#4b7290}
+
+h1              {font-family: "RocknRoll One";
+                font-size: 3em;
+                background-color: transparent;
+                padding-left: 20px;}
+
+h2             {font-family: 'Chelsea Market';
+                font-size: 2em;
+                }
+                
+h3              {font-family: "RocknRoll One";
+                font-size: 1.2em;
+                padding-left: 20px;}
+   
+p              {font-family: "RocknRoll One";
+                font-size: 1.1em;
+                padding-left: 20px;
+                padding-right: 20px;}
+
+header          {width: 100%;
+                height: 600px;
+                display: grid;
+                grid-template-columns: repeat(24, 1fr);
+                grid-template-rows: repeat(7, 1fr);
+                justify-items:flex-start;
+                align-items:top;
+                background-image: url("./bellTentEve.JPG");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center center;}
+
+
+#navBanner      {grid-area: 1 / 1 / 2 / 25;
+                 background-color:#16014B;
+                 width: 100%;
+                 padding: 2%;
+                 z-index: 2;
+                 display:inline-flex;
+                justify-content:flex-end;}
+
+#logo           {grid-area: 1 / 2 / 3 / 11;
+                    width: 70%;
+                    z-index: 5;}
+   
+a                {text-decoration: none;}
+a:hover         {color: white;}
+a:visited       {color: #F79605}
+
+#navBanner a    {font-family: "RocknRoll One";
+                 color: #F79605;
+                 font-size: 1.2em;
+                 padding: 10px;
+                text-align: right;}
+
+
+header h2        {grid-area: 7 / 2 / 8 / 14;
+                 color:#F79605;
+                 text-shadow:2px 2px 2px 
+                 #16014B;}
+
+#orange          {color: #F79605;
+                 font-size: 1em;
+                 text-shadow: }
+
+#bedPhoto       {grid-area: 3 / 2 / 5 / 11;
+                 width: 70%;
+                 border: 5px solid #F79605;}
+
+#bellTent       {display: none;}                 
+header p        {grid-area: 8 / 1 / 9 / 25;
+                color: #4b7290;
+                width: 100%;
+                padding-left: 50px;
+                font-size: 1.5em;
+                font-weight: bold;
+                background-color: #16014B;
+                line-height: 3em;}
+
+.flexImages     {display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                background-color: #4b7290;
+                align-items: flex-end;
+                width: 100%;
+                margin-top: 4%;
+                margin-bottom: 3%;}
+figure          {display: grid;
+                flex-grow: 1;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                }
+figure img      {
+                grid-area: 1 / 1 / 4 / 4;
+                width: 100%;
+                opacity: 0.8;
+                border: 2px solid #4b7290;
+                filter:saturate(140%);}
+
+figcaption      {color: #F79605;
+                text-shadow: 3px 3px 3px #16014B;
+                font-family: "Chelsea Market";
+                grid-area: 2 / 2 / 3 / 4;
+                font-size: 3em;
+                justify-self: bottom;
+                z-index: 5;
+                }
+
+#AboutSection h2       {text-align: center;}
+
+#About           {background-color: #16014B;
+                color: #F79605;
+                line-height: 2em;
+                padding: 2% 5%;}
+
+#Availability    {margin: 20px auto;
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+                 justify-content: center;}
+
+#campfire        {margin-bottom: 40px;}
+
+#Availabilityform   
+                    {padding: 1% 1%;
+                    padding-right: 1%;
+                    color:#16014B;
+                    font-family: "Love Ya Like A Sister";
+                    padding-bottom: 5%;
+                    min-width: 500px;}
+
+form            {margin-left: 10px;}
+fieldset        {padding: 2%;
+                border-radius: 5%;
+                border: 3px solid #F79605}
+legend          {font-size: 2em;
+                color: #F79605;
+                font-family: "Chelsea Market";}
+label           {font-size: 1.5em;}
+input, select, button   {font-size: 1.1em;
+                background-color: #F79605;
+                border: 3px solid #16014B;
+                margin: 1%;
+                width: 30%;
+                font-family: "Love Ya Like A Sister";
+                border-radius: 10%;}
+
+
+#TeamSection     {width: 100%;
+                 color: #F79605;
+                 background-color: #16014B;
+                 padding: 3%;
+                 text-align: center;}
+
+#Team            {background-color: #16014B;}
+
+#teamImages      {display: flex;
+                 flex-direction: row;
+                 flex-wrap: nowrap;
+                 padding: 3%;}
+            
+#teamImages figure 
+                {display: flex;
+                flex-direction: column;
+                margin: 3%;}
+
+#teamImages figcaption
+                {font-size: 1.5em;
+                text-align: center;}
+
+
+#Contact        {background-color: #F79605;
+                color: #16014B;
+                text-align: center;
+                padding: 2%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                width: 100%;}
+#Contact img    {border: 5px solid #4b7290;
+                max-width: 25%;}
+#contactText    {width: 30%;
+                background-color: #16014B;
+                color: #F79605;
+                padding-top: 2%;}
+#bedPhotoBottom     {display: none;}
+footer          {width: 100%;
+                text-align: center;
+                margin: 2% 0%;
+                border-top: 5px solid #4b7290;
+                clear: both;}
+            
+
+/* ----------Tablets----------- */
+@media only screen and (max-width: 1200px) {
+
+#logo           {grid-area: 3 / 2 / 5 / 11;}
+#bedPhoto       {grid-area: 5 / 2 / 6 / 11;}
+header h2       {display: none;}
+header p        {line-height: 1.5em;}
+
+}
+/* ----------Tablets----------- */
+@media only screen and (max-width: 880px) {
+
+    #logo           {grid-area: 2 / 2 / 4 / 15;}
+    #bedPhoto       {grid-area: 5 / 2 / 6 / 15;}
+    header p        {line-height: 1.5em;}
+    #navBanner      {background-color:#16014B;
+                    width: 100%;
+                    text-align: center;
+                    display: block;}
+#fancyBedPhoto      {display: none;}
+#Contact img        {max-width: 45%;}
+#contactText        {width: 45%;}
+                
+                }
+
+
+/* ----------Mobile Phones----------- */
+
+@media only screen and (max-width: 650px) {
+*               {padding: 1%;}
+body            {background-color:#16014B;}
+header           {width: 100%;
+                 height: auto;
+                 display: flex;
+                 flex-direction: column;
+                 align-items:top;
+                 background-image: none;
+                 background-color:#16014B;}
+#logo           {width: 80%;
+                align-self: center;
+                }
+
+#bedPhoto       {display: none;}
+#bellTent       {display: block;}
+header p        {font-size: 1em;
+                line-height: 1.2em;
+                margin: 2% 1%;
+                padding: 0;}
+
+#About          {margin: 1%;}
+.flexImages      {flex-direction:column;
+               flex-wrap: wrap;}
+figcaption      {font-size: 2em;
+                grid-area: 3 / 2 / 4 / 4;}
+ 
+#campfire       {display: none;}
+form            {width: 100%;}
+
+#Availabilityform   {width: 100%;
+                    color: #F79605;}
+form                {margin: 0;}
+input, select       {width: 60%;}
+button              {background-color: #4b7290;}
+#TeamSection        {margin: 2%;}
+#Team               {font-size: 1.5em;}
+#teamImages         {flex-direction: column;
+                    width: 70%;
+                    padding: 0;
+                    height: auto;}
+#teamImages figure  {flex-direction: row;
+                    width: 96%;}
+#teamImages figcaption {font-size: 1em;
+                    text-align: left;
+                    width: 96%;}
+#Contact            {flex-direction: column;}
+#Contact img        {max-width: 100%;}
+#contactText        {width: 100%;}
+#contactText p       {margin: 0;}
+#niceSign           {display: none;}
+#fancyBedPhoto          {display: none;}
+#bedPhotoBottom      {display: block;
+                    width: 100%;}
+footer              {background-color:#4b7290;
+                    line-height: 1em;
+                    font-size: 0.7em;}

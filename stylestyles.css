@@ -1,0 +1,190 @@
+*               {margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 16px;}
+
+img             {max-width: 100%;}
+
+main            {width: 100%;
+                height: 100%;
+                margin: 0 auto;}
+
+body            {background-color:#4b7290}
+
+h1              {font-family: "RocknRoll One";
+                font-size: 5em;
+                font-weight: bolder;
+                background-color: transparent;
+                padding-left: 20px;
+                }
+
+h2             {font-family: 'Chelsea Market';
+                font-size: 2em;
+                padding-left: 20px;}
+                
+
+h3              {font-family: "RocknRoll One";
+                color: black;
+                font-size: 2em;
+                padding-left: 20px;}
+   
+p              {font-family: "Chelsea Market";
+                font-size: 1.1em;
+                padding-left: 20px;}
+
+
+header          {width: 100%;
+                height: 550px;
+                display: grid;
+                grid-template-columns: repeat(24, 1fr);
+                grid-template-rows: repeat(7, 1fr);
+                justify-items:flex-start;
+                background-image: url("./bellTentEve.JPG");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-color: #e8e7e5;
+                }
+
+header img       {grid-area: 1 / 2 / 3 / 11;
+                  width: 70%;
+                  }
+
+header h2       {grid-area: 2 / 2 / 4 / 11;
+                 color:#F79605;
+                 text-shadow:2px 2px 2px 
+                 #16014B;
+                 justify-self: center;}
+
+
+header p        {grid-area: 8 / 1 / 9 / 25;
+                color: #4b7290;
+                width: 100%;
+                padding-left: 50px;
+                font-size: 2em;
+                text-shadow: 1px 1px 1px #16014B;
+                background-color: #16014B;}
+
+#headbanner      {grid-area: 1 / 1 / 2 / 25;
+                 background-color:#16014B;
+                 width: 100%;
+                 text-align: right;
+                 padding: 2%;
+                }
+
+#TypographyHead   {color:#F79605;
+                   margin-top: 10px;
+                   padding: 20px 20px;
+                   background-color: #16014B;}
+
+#Typography h1    {font-size: 1.5em;}
+#Typography h2    {font-size: 1.5em;}
+#Typography h3    {font-size: 1.2em;}
+#Typography p    {font-size: 1.1em;}
+
+#headbanner a   {font-family: "Chelsea Market";
+                color: #F79605;
+                text-decoration: none;
+                font-size: 1.5em;
+                font-family: "Love Ya Like A Sister";
+                padding: 10px;}
+
+#colourFlex {display:inline-flex;
+                 width: 90%;}
+
+#colourScheme h2    {color: #16014B;
+                    background-color: #F79605;
+                    padding: 20px 20px;
+                    font-size: 1.5em;}
+
+#colourOne        {width: 20%;
+                  height: 175px;
+                  background-color: #16014B;
+                  text-align: center;
+                  color: white;
+                  margin: 1%;
+                  padding: 2%;}
+#colourTwo        {width: 20%;
+                  margin: 1%;
+                  height: 175px;
+                  background-color: #F79605;
+                  text-align: center;
+                  padding: 2%;
+                  color: white;}
+#colourThree       {width: 20%;
+                   height: 175px;
+                   background-color: 
+                   #4b7290;
+                   margin: 1%;              
+                   text-align: center;
+                   padding: 2%;
+                   color: white;
+                   border: 2px solid white;}   
+#colourFour       {width: 20%;
+                    height: 175px;
+                    background-color: white;
+                    margin: 1%;
+                    padding: 2%;              
+                    text-align: center;
+                    color: #4b7290;
+                    border: 2px solid #4b7290;}
+
+footer              {width: 100%;
+                    text-align: right;
+                    margin: 2% 0%;
+                    padding-right: 10px;
+                    border-top: 5px solid #4b7290;}
+
+/* This is the section for Tablets */
+
+@media only screen and (max-width: 1300px){
+header      {background-image: url("./heroImageTablet.JPG");
+            background-position: bottom center;
+            height: 85vh;}
+header h2   {top: 55vh;}
+}
+
+
+@media only screen and (max-width: 1000px){
+#colourOne, #colourTwo, #colourThree, #colourFour, #colourFive 
+                {height: auto;}
+header          {height: 75vh;}
+header h2       {top: 57vh;}
+li              {list-style-type: none;
+                text-align: center;
+                margin: 0% auto};
+}
+
+@media only screen and (max-width: 840px){
+header          {height: 55vh;
+                background-position: bottom center;
+                background-image: url("./heroImageMobile.JPG");}
+header h2       {top: 40vh;}    
+h1              {font-size: 3em;}
+
+}
+@media only screen and (max-width: 550px){
+h1              {font-size:200%;
+                margin: 0 2%;
+                background-color:ghostwhite;
+                width: 97%;}
+header          {background-position: bottom center;
+                height: 85vh;}
+h2              {text-align: center;
+                font-size: 2em;
+                margin: 1% 1%;
+                top: 20vh;}
+h3              {font-size: 1.1em;
+                text-align: center;}
+header h2       {top: 35vh;}
+header          {height: 50vh;}
+#colourFlex 
+                {display:flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;}    
+#colourOne, #colourTwo, #colourThree, #colourFour, #colourFive 
+                {width: 70%;
+                margin: 1% 1%;}
+
+}
